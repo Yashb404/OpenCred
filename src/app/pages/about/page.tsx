@@ -37,7 +37,7 @@ export default function AboutPage() {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-600 mb-6">
-              FinScore is revolutionizing credit scoring by leveraging India's Account Aggregator framework 
+              FinScore is revolutionizing credit scoring by leveraging India&apos;s Account Aggregator framework 
               to provide fair and inclusive financial assessment for the underbanked population.
             </p>
             
@@ -59,14 +59,14 @@ export default function AboutPage() {
               </div>
               <div className="text-center p-4">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-green-600 font-bold">2</span>
+                  <span className="text-blue-600 font-bold">2</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Analyze</h3>
                 <p className="text-sm text-gray-600">Our AI analyzes your transaction patterns and financial behavior</p>
               </div>
               <div className="text-center p-4">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-purple-600 font-bold">3</span>
+                  <span className="text-blue-600 font-bold">3</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Score</h3>
                 <p className="text-sm text-gray-600">Get your alternative credit score and unlock financial opportunities</p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
             
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Technology</h2>
             <p className="text-gray-600 mb-6">
-              Built on India's secure Account Aggregator framework, our platform ensures data privacy 
+              Built on India&apos;s secure Account Aggregator framework, our platform ensures data privacy 
               and security while providing comprehensive financial insights. We use advanced machine 
               learning algorithms to analyze spending patterns, income stability, and financial discipline.
             </p>
