@@ -39,6 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-datasets/archive.zip
-datasets/archive/Budget.csv
-datasets/archive/personal_transactions.csv
