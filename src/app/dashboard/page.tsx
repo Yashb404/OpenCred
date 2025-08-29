@@ -2,36 +2,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import Navbar from "@/components/Navbar";
 
 export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="border-b bg-white">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg"></div>
-            <span className="text-xl font-bold text-gray-900">FinScore</span>
-          </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Home
-            </Link>
-            <Link href="/dashboard" className="text-blue-600 font-medium">
-              Dashboard
-            </Link>
-            <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
-              About
-            </Link>
-          </nav>
-          <div className="flex items-center space-x-3">
-            <Button variant="outline" asChild>
-              <Link href="/">Back to Home</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
-
+      <Navbar></Navbar>
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
@@ -83,18 +60,8 @@ export default function DashboardPage() {
           </div>
 
           {/* Action Buttons */}
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Connect Bank Account</CardTitle>
-                <CardDescription>Connect your bank accounts to get your credit score</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full" size="lg">
-                  Connect via Account Aggregator
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-1 gap-6 mb-8">
+
             
             <Card>
               <CardHeader>
@@ -102,7 +69,7 @@ export default function DashboardPage() {
                 <CardDescription>Update your credit score with latest data</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full" size="lg">
+                <Button variant="outline" className="w-full hover:bg-green-200" size="lg" >
                   Refresh Now
                 </Button>
               </CardContent>
