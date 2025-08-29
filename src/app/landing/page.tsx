@@ -12,22 +12,22 @@ export default function LandingPage() {
             <span className="text-xl font-bold text-gray-900">FinScore</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/pages/landing" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/landing" className="text-gray-600 hover:text-gray-900 transition-colors">
               Home
             </Link>
-            <Link href="/app/dashboard" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/dashboard" className="text-gray-600 hover:text-gray-900 transition-colors">
               Dashboard
             </Link>
-            <Link href="/pages/about" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
               About
             </Link>
           </nav>
           <div className="flex items-center space-x-3">
             <Button variant="outline" asChild>
-              <Link href="/app/dashboard">Get Started</Link>
+              <Link href="/dashboard">Get Started</Link>
             </Button>
             <Button asChild>
-              <Link href="/app/dashboard">Check Score</Link>
+              <Link href="/dashboard">Check Score</Link>
             </Button>
           </div>
         </div>
@@ -46,10 +46,10 @@ export default function LandingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
-              <Link href="/app/dashboard">Check Your Score Now</Link>
+              <Link href="/dashboard">Check Your Score Now</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link href="/pages/about">Learn More</Link>
+              <Link href="/about">Learn More</Link>
             </Button>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function LandingPage() {
               <div className="w-8 h-8 bg-blue-600 rounded"></div>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Secure Data Access</h3>
-            <p className="text-gray-600">Connect your bank accounts securely through India's Account Aggregator framework</p>
+            <p className="text-gray-600">Connect your bank accounts securely through India&apos;s Account Aggregator framework</p>
           </div>
           <div className="text-center p-6">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
