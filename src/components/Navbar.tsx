@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Button } from './ui/button'
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 const Navbar = () => {
   return (
@@ -22,12 +23,17 @@ const Navbar = () => {
             </Link>
           </nav>
           <div className="flex items-center space-x-3">
-            <Button variant="outline" asChild>
+            <SignedOut>
+                <Button variant="outline" asChild>
               <Link href="/sign-in">Sign In</Link>
             </Button>
             <Button asChild>
               <Link href="/sign-up">Sign Up</Link>
             </Button>
+            </SignedOut>
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
           </div>
         </div>
       </header>
