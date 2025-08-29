@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header */}
@@ -12,7 +12,7 @@ export default function Home() {
             <span className="text-xl font-bold text-gray-900">FinScore</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-blue-600 font-medium">
+            <Link href="/landing" className="text-gray-600 hover:text-gray-900 transition-colors">
               Home
             </Link>
             <Link href="/dashboard" className="text-gray-600 hover:text-gray-900 transition-colors">
